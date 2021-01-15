@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script>
+			(function(apiKey){
+				(function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
+				v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
+					o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+					y=e.createElement(n);y.async=!0;y.src='https://pendo-test-static.storage.googleapis.com/agent/static/'+apiKey+'/pendo.js';
+					z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+			
+					// Call this whenever information about your visitors becomes available
+					pendo.initialize({
+						"visitor": {
+							"id": "one-product",	
+							"email": "one-product@pendo.io",
+							"full_name": "one-product user"
+						},
+						"account": {
+							"id": "one-product-account",
+							"name": "one-product account",
+							"monthly_value": 134612,
+							"is_paying": true
+						},
+					});
+				})('f12d5e70-be12-417b-72d9-4c2ceab03296');
+		</script>
+    </head>
+    <body>
+        Testing Page
+    </body>
+</html>
